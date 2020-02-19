@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -18,11 +19,15 @@ body {
 
 /* ESTRUTURA */
 
-header, main, footer {
+header,
+main,
+footer {
   text-align: center;
 }
 
-header, .form, main {
+header,
+.form,
+main {
   margin: 0 auto 70px auto;
   width: 90%;
   max-width: 500px;
@@ -36,7 +41,8 @@ header h1, main h2 {
   margin-bottom: 70px;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #000000cc;
 }
 
@@ -89,7 +95,8 @@ section.form {
   border-radius: 6px;
 }
 
-form input, form button {
+form input,
+form button {
   width: 100%;
   margin-bottom: 4px;
   padding: 8px 16px;
@@ -130,7 +137,7 @@ main .donors {
 }
 
 .blood::before {
-  content: "";
+  content: '';
   background-color: #ff4f4f11;
   width: 40px;
   height: 40px;
@@ -145,6 +152,7 @@ main .donors {
 
 .donor p {
   margin-top: 24px;
+  margin-bottom: 64px;
   font-size: 14px;
 }
 
@@ -152,14 +160,14 @@ footer {
   margin-top: auto;
   padding-bottom: 16px;
   border: 1px solid #eee;
-  vertical-align : middle;
+  vertical-align: middle;
 }
 
 footer a img {
   line-height: 18px;
   height: 18px;
   width: 18px;
-  vertical-align : middle;
+  vertical-align: middle;
 }
 
 /* SCRIPT CLASSES */
