@@ -64,6 +64,10 @@ server.post('/', (req, res) => {
   });
 });
 
-server.listen('3000', () => {
-  console.log('Servidor iniciado e rodando na porta 3000.');
+let port = process.env.PORT;
+if (port == null || port == '') {
+  port = 3000;
+}
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });
