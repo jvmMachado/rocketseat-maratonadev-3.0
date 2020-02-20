@@ -15,16 +15,17 @@ server.use(express.static('public'));
 
 client.connect();
 
-client.query(
-  'SELECT table_schema,table_name FROM information_schema.tables;',
-  (err, res) => {
-    if (err) throw err;
-    for (let row of res.rows) {
-      console.log(JSON.stringify(row));
-    }
-    client.end();
-  }
-);
+//commenting out for test. Should be on according to heroku.
+// client.query(
+//   'SELECT table_schema,table_name FROM information_schema.tables;',
+//   (err, res) => {
+//     if (err) throw err;
+//     for (let row of res.rows) {
+//       console.log(JSON.stringify(row));
+//     }
+//     client.end();
+//   }
+// );
 
 // const Pool = require('pg').Pool;
 // const db = new Pool({
