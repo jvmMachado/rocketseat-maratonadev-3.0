@@ -1,11 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nunjucks = require('nunjucks');
+
 const { Client } = require('pg');
 
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false }
+  ssl: true
 });
 const server = express();
 server.use(express.urlencoded({ extended: true }));
